@@ -1,0 +1,12 @@
+<div class="container-fluid vh-100 d-flex flex-column p-0">
+    <div class="bg-success text-center py-2 border-bottom border-dark">IT 05-1</div>
+
+    <div class="flex-grow-1 d-flex flex-column align-items-center justify-content-between py-5">
+      <button type="button" class="btn btn-primary btn-lg rounded-5 px-5 py-4 fs-1 fw-bold shadow"
+           [disabled]="loading()" (click)="goIt0502()">รับบัตรคิว</button>
+      @if (error()) {
+        <div class="alert alert-danger" role="alert">{{ error() }}</div>
+      }
+      <button type="button" class="btn btn-secondary px-5" [disabled]="loading()" (click)="goIt0503()">ล้างคิว</button>
+    </div>
+  </div>

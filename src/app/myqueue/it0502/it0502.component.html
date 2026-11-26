@@ -1,0 +1,10 @@
+<div class="container-fluid vh-100 d-flex flex-column p-0">
+    <div class="bg-success text-center py-2 border-bottom border-dark">IT 05-2</div>
+
+    <div class="flex-grow-1 d-flex flex-column align-items-center justify-content-center text-center gap-3">
+      <h4>หมายเลขคิว</h4>
+      <div class="display-1 fw-bold" style="font-size:8rem">{{ item?.queueNumber }}</div>
+      <div>วันที่ {{ item?.issuedAt | date: 'dd/MM/yyyy' }} : เวลา {{ item?.issuedAt | date: 'HH:mm' }} น.</div>
+      <button type="button" class="btn btn-primary px-5" (click)="back()">กลับไปหน้ารับบัตรคิว</button>
+    </div>
+  </div>
